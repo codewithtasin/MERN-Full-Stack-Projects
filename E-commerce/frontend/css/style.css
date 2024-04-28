@@ -1,0 +1,52 @@
+.slider-container img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: auto;
+  padding: 5px;
+}
+.slider-container{
+  background-color: white;
+}
+
+/*  latest products */
+
+.products-section{
+  padding:25px 0;
+  
+}
+
+.products-section h2{
+text-align: center;
+margin-top: -20px;
+border-radius: 10px;
+background-color: #8F697B;
+color: #FFDD67;
+padding: 15px;
+margin: -20px 10px 20px 10px;
+font-family: "Brush Script MT", cursive;
+font-weight: bolder;
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0px 15px;
+}
+
+
+
+
+/* For 720px Screen Size  */
+
+
+@media only screen and (max-width: 720px) {
+  .products-container{
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}

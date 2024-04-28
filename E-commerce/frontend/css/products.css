@@ -1,0 +1,47 @@
+.products h2 {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffdd67;
+  color: #8f697b;
+  padding: 15px;
+  margin: 10px 10px 20px 10px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bolder;
+}
+#our-products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 15px;
+  margin: -10px 5px;
+}
+
+@media only screen and (max-width: 1020px) {
+  
+    #our-products-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+/* For 720px Screen Size  */
+
+@media only screen and (max-width: 920px) {
+  .products h2 {
+    background-color: #8f697b;
+    color: #ffdd67;
+  }
+
+  #our-products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  
+    #our-products-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
