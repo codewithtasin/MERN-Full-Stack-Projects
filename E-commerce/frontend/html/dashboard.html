@@ -6,6 +6,7 @@
     <title>Dashboard - Daamekoom</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/dashboard-report.css" />
   </head>
   <body>
     <!-- Header -->
@@ -35,18 +36,60 @@
           <h4>Dashboard</h4>
         </div>
         <ul>
-          <li><a href="">Report</a></li>
-          <li><a href="">Order</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Sliders</a></li>
-          <li><a href="">Settings</a></li>
+          <li><a href="dashboard.html">Report</a></li>
+          <li><a href="dashboard-orders.html">Order</a></li>
+          <li><a href="dashboard-products.html">Products</a></li>
+          <li><a href="dashboard-sliders.html">Sliders</a></li>
+          <li><a href="dashboard-settings.html">Settings</a></li>
         </ul>
       </div>
       <!-- Right Part -->
       <div class="right-part">
         <div class="title-bar">
           <h2>Report</h2>
-          <button class="btn">Demo</button>
+        </div>
+        <div class="report-container">
+          <button>
+            <div class="report-1">
+              <h4>Today's Order</h4>
+              <h2 id="todaysOrder">00</h2>
+            </div>
+          </button>
+
+          <button>
+            <div class="report-2">
+              <h4>Total Products</h4>
+              <h2 id="totalProducts">00</h2>
+            </div>
+          </button>
+
+          <button>
+            <div class="report-3">
+              <h4>Total Categories</h4>
+              <h2>28</h2>
+            </div>
+          </button>
+
+          <button>
+            <div class="report-4">
+              <h4>Total Customers</h4>
+              <h2>2029</h2>
+            </div>
+          </button>
+
+          <button>
+            <div class="report-5">
+              <h4>Total Orders</h4>
+              <h2 id="totalOrders">00</h2>
+            </div>
+          </button>
+
+          <button>
+            <div class="report-6">
+              <h4>Total Sliders</h4>
+              <h2 id="totalSliders">00</h2>
+            </div>
+          </button>
         </div>
       </div>
     </section>
@@ -82,5 +125,7 @@
         </ul>
       </div>
     </footer>
+
+    <script type="module" src="../js/shared/dashboard-report.js"></script>
   </body>
 </html>

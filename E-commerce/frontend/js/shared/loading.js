@@ -1,5 +1,5 @@
 function loading() {
-  return '<div class="loading loading--hidden"></div>';
+  return '<div class="loading"></div>';
 }
 
 export default loading();

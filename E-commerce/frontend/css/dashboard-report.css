@@ -1,0 +1,51 @@
+.report-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-container div {
+  background-color: #FFDD67;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.report-container div h4{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.report-container div h2{
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.report-container .report-1{
+    background-color: red;
+}
+
+.report-container .report-2{
+    background-color: yellowgreen;
+}
+
+.report-container .report-3{
+    background-color: skyblue;
+}
+
+.report-container .report-4{
+    background-color: orange;
+}
+
+.report-container .report-5{
+    background-color: pink;
+}
+
+.report-container .report-6{
+    background-color: silver;
+}

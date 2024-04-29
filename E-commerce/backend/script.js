@@ -73,6 +73,34 @@ async function run() {
       res.send(result);
     });
 
+    // Get all Orders
+    app.get("/api/dashboard-orders", async (req, res) => {
+      const result = await orderCollection.find().toArray();
+      res.send(result);
+    });
+
+    // Dashboard Report
+    app.get("/api/dashboard-report", async (req, res) => {
+      const date = new Date();
+      const today = date.toLocaleDateString();
+      const condition = { date: today };
+
+      const todaysOrder = (await orderCollection.find(condition).toArray())
+        .length;
+      const totalProducts = await productCollection.countDocuments();
+      const totalOrders = await orderCollection.countDocuments();
+      const totalSliders = await sliderCollection.countDocuments();
+
+      const data = {
+        todaysOrder,
+        totalProducts,
+        totalOrders,
+        totalSliders,
+      };
+
+      res.send(data);
+    });
+
     app.listen(process.env.PORT, () => {
       console.log(`The Server is running on ${process.env.PORT} PORT`);
     });

@@ -268,3 +268,25 @@ footer ul {
     font-size: 12px;
   }
 }
+
+
+
+/* Table */
+.table{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffdd67;
+  color: #ffffff;
+  border-radius: 10px;
+  /* border-collapse: collapse; */
+  text-align: center;
+  padding: 10px;
+}
+
+table tr th{
+  padding: 5px;
+}
+
+table tr td{
+  padding: 3px;
+}
