@@ -170,6 +170,7 @@ footer ul {
   border: 2px solid white;
   border-radius: 10px;
   box-shadow: 1px 2px 2px 2px black;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #8f697b;
@@ -269,10 +270,8 @@ footer ul {
   }
 }
 
-
-
 /* Table */
-.table{
+.table {
   width: 100%;
   padding: 10px;
   border: 2px solid #ffdd67;
@@ -283,10 +282,10 @@ footer ul {
   padding: 10px;
 }
 
-table tr th{
+table tr th {
   padding: 5px;
 }
 
-table tr td{
+table tr td {
   padding: 3px;
 }

@@ -1,49 +1,95 @@
-.slider-container img {
-  max-width: 100%;
-  height: auto;
-  border: 5px solid white;
-  border-radius: 20px;
+/* nav-bar & slider */
+
+.nav-bar-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 280px;
   margin: auto;
-  padding: 5px;
 }
-.slider-container{
+
+.nav-bar {
+  flex-basis: 22%;
+  display: grid;
+  grid-template-columns: repeat(4, 6fr);
+  grid-gap: 10px;
+  background-color: #8f697b;
+  border-radius: 10px;
+  padding: 10px;
+  height: 270px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.nav-bar .btn {
+  width: 60px;
+  height: 60px;
   background-color: white;
+  font-size: 11px;
+  border: 2px solid #ffdd67;
+  box-shadow: 1px 4px 8px 2px #ffdd67;
+}
+
+.nav-bar img {
+  width: 30px;
+}
+
+.slider-container {
+  flex-basis: 78%;
+  margin-left: 5px;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+}
+
+/* For 850px Screen Size  */
+
+@media only screen and (max-width: 850px) {
+  .slider-container {
+    flex-basis: 100%;
+    margin-right: 5px;
+  }
+  .slider-container img {
+    width: 100%;
+    height: 275px;
+  }
+  .nav-bar {
+    display: none;
+  }
 }
 
 /*  latest products */
 
-.products-section{
-  padding:25px 0;
-  
+.products-section {
+  padding: 25px 0;
 }
 
-.products-section h2{
-text-align: center;
-margin-top: -20px;
-border-radius: 10px;
-background-color: #8F697B;
-color: #FFDD67;
-padding: 15px;
-margin: -20px 10px 20px 10px;
-font-family: "Brush Script MT", cursive;
-font-weight: bolder;
+.products-section h2 {
+  text-align: center;
+  margin-top: -20px;
+  border-radius: 10px;
+  background-color: #8f697b;
+  color: #ffdd67;
+  padding: 15px;
+  margin: -20px 10px 20px 10px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bolder;
 }
 
-.products-container{
+.products-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   padding: 0px 15px;
 }
 
-
-
-
 /* For 720px Screen Size  */
 
-
 @media only screen and (max-width: 720px) {
-  .products-container{
+  .products-container {
     margin: 0px 10px 0px 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

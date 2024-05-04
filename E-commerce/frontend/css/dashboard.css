@@ -2,6 +2,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
+  height: 600px;
 }
 
 .left-part {
@@ -55,16 +56,17 @@ section {
   background-color: #8f697b;
   padding: 10px;
   border-radius: 10px;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .title-bar {
-  display: block;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #ffdd67;
   color: #8f697b;
   margin-bottom: 20px;
   border-radius: 5px;
   padding: 10px;
-  text-align: center;
 }

@@ -6,6 +6,7 @@
     <title>Dashboard - Daamekoom</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/dashboard-products.css" />
   </head>
   <body>
     <!-- Header -->
@@ -45,9 +46,24 @@
       <!-- Right Part -->
       <div class="right-part">
         <div class="title-bar">
-          <h2>Report</h2>
-          <button class="btn">Demo</button>
+          <h2>Available Products</h2>
+          <a href="../html/dashboard-add-new-product.html"
+            ><button class="btn">Add New Product</button></a
+          >
         </div>
+
+        <table border="1px" class="table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Product ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody id="root"></tbody>
+        </table>
       </div>
     </section>
 
@@ -82,5 +98,7 @@
         </ul>
       </div>
     </footer>
+
+    <script type="module" src="../js/shared/dashboard-products.js"></script>
   </body>
 </html>

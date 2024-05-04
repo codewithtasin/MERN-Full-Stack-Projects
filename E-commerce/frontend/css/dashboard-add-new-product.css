@@ -1,0 +1,44 @@
+.add-new-product{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 2px solid #FFDD67;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.add-new-product h3{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #FFDD67;
+    margin-bottom: 10px;
+}
+
+.add-new-product label{
+    padding: 5px;
+    font-weight: bold;
+    color: #FFDD67;
+    text-align: start;
+    align-items: start; 
+    margin-left: 10%;
+}
+
+.add-new-product input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+
+.add-new-product .des{
+    height: 90px;
+}
+
+.add-new-product button{
+    margin-top: 20px;
+}

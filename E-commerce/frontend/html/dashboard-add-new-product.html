@@ -6,7 +6,8 @@
     <title>Dashboard - Daamekoom</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
-    <link rel="stylesheet" href="../css/dashboard-sliders.css" />
+    <link rel="stylesheet" href="../css/dashboard-products.css" />
+    <link rel="stylesheet" href="../css/dashboard-add-new-product.css" />
   </head>
   <body>
     <!-- Header -->
@@ -46,21 +47,39 @@
       <!-- Right Part -->
       <div class="right-part">
         <div class="title-bar">
-          <h2>Ongoing Sliders</h2>
-          <a href="../html/dashboard-add-new-slider.html"
-            ><button class="btn">Add New Slider</button></a
-          >
+          <h2>Add New Product</h2>
         </div>
-        <table class="table" border="2px">
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Image</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="root"></tbody>
-        </table>
+
+        <div>
+          <form action="" id="add-new-product" class="add-new-product">
+            <h3>New Product Form</h3>
+            <label for="name">Title </label>
+            <input
+              type="text"
+              name="title"
+              placeholder="type here..."
+              required
+            />
+            <label for="price">Price </label>
+            <input
+              type="text"
+              name="price"
+              placeholder="type here..."
+              required
+            />
+            <label for="img"> IMG URL </label>
+            <input type="text" name="img" placeholder="type here..." required />
+            <label for="description">Description </label>
+            <input
+              type="text"
+              name="des"
+              class="des"
+              placeholder="type here..."
+              required
+            />
+            <button class="btn">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -96,6 +115,9 @@
       </div>
     </footer>
 
-    <script type="module" src="../js/shared/dashboard-sliders.js"></script>
+    <script
+      type="module"
+      src="../js/shared/dashboard-add-new-product.js"
+    ></script>
   </body>
 </html>

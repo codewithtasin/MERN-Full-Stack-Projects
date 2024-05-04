@@ -6,7 +6,7 @@
     <title>Dashboard - Daamekoom</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
-    <link rel="stylesheet" href="../css/dashboard-sliders.css" />
+    <link rel="stylesheet" href="../css/dashboard-add-new-slider.css" />
   </head>
   <body>
     <!-- Header -->
@@ -46,21 +46,19 @@
       <!-- Right Part -->
       <div class="right-part">
         <div class="title-bar">
-          <h2>Ongoing Sliders</h2>
-          <a href="../html/dashboard-add-new-slider.html"
-            ><button class="btn">Add New Slider</button></a
-          >
+          <h2>Add New Slider</h2>
         </div>
-        <table class="table" border="2px">
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Image</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody id="root"></tbody>
-        </table>
+
+        <div>
+          <form action="" id="add-new-slider" class="add-new-slider">
+            <h3>New Slider Form</h3>
+
+            <label for="img"> IMG URL </label>
+            <input type="text" name="img" placeholder="type here..." required />
+
+            <button class="btn">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -96,6 +94,9 @@
       </div>
     </footer>
 
-    <script type="module" src="../js/shared/dashboard-sliders.js"></script>
+    <script
+      type="module"
+      src="../js/shared/dashboard-add-new-slider.js"
+    ></script>
   </body>
 </html>

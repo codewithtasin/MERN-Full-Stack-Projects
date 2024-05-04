@@ -73,12 +73,6 @@ async function run() {
       res.send(result);
     });
 
-    // Get all Orders
-    app.get("/api/dashboard-orders", async (req, res) => {
-      const result = await orderCollection.find().toArray();
-      res.send(result);
-    });
-
     // Dashboard Report
     app.get("/api/dashboard-report", async (req, res) => {
       const date = new Date();
@@ -99,6 +93,43 @@ async function run() {
       };
 
       res.send(data);
+    });
+
+    // Dashboard Orders
+    app.get("/api/dashboard-orders", async (req, res) => {
+      const result = await orderCollection.find().toArray();
+      res.send(result);
+    });
+
+    // Dashboard Products
+    app.get("/api/dashboard-products", async (req, res) => {
+      const result = await productCollection.find().toArray();
+      res.send(result);
+    });
+
+    // Dashboard Add New Product
+    app.post("/api/dashboard-add-new-product", async (req, res) => {
+      const data = req.body;
+      const result = await productCollection.insertOne(data);
+      res.send(result);
+    });
+
+    // Dashboard Sliders
+    app.get("/api/dashboard-sliders", async (req, res) => {
+      const result = await sliderCollection.find().toArray();
+      res.send(result);
+    });
+
+    // app.delete("/api/delete-sliders", async (req, res) => {
+    //   const data = req.body;
+    //   const result = await sliderCollection.deleteOne(data);
+    //   res.send(result);
+    // });
+
+    app.post("/api/dashboard-add-new-slider", async (req, res) => {
+      const data = req.body;
+      const result = await sliderCollection.insertOne(data);
+      res.send(result);
     });
 
     app.listen(process.env.PORT, () => {
