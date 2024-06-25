@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Tasin-Portfolio/static/css/main.18f0a600.css",
+    "main.js": "/Tasin-Portfolio/static/js/main.81a73cd4.js",
+    "static/js/453.419a5d54.chunk.js": "/Tasin-Portfolio/static/js/453.419a5d54.chunk.js",
+    "static/media/profile-photo.jpg": "/Tasin-Portfolio/static/media/profile-photo.2b018c1e9fa277edcd70.jpg",
+    "static/media/cover-photo.png": "/Tasin-Portfolio/static/media/cover-photo.11e0c441b61613cef9da.png",
+    "static/media/CodewithTasin11.png": "/Tasin-Portfolio/static/media/CodewithTasin11.ca25056ac580838d378a.png",
+    "static/media/Edu-Portfolio-cover.png": "/Tasin-Portfolio/static/media/Edu-Portfolio-cover.d0156685b0b5f856188b.png",
+    "static/media/daamekoom2cover.jpg": "/Tasin-Portfolio/static/media/daamekoom2cover.2cdf97eb749e9a715be7.jpg",
+    "index.html": "/Tasin-Portfolio/index.html",
+    "main.18f0a600.css.map": "/Tasin-Portfolio/static/css/main.18f0a600.css.map",
+    "main.81a73cd4.js.map": "/Tasin-Portfolio/static/js/main.81a73cd4.js.map",
+    "453.419a5d54.chunk.js.map": "/Tasin-Portfolio/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18f0a600.css",
+    "static/js/main.81a73cd4.js"
+  ]
+}
